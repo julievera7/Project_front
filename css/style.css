@@ -38,7 +38,7 @@ header {
     font-weight: bold;
     font-size: 15px;
     color: #f1ede9;
-    text-decoration: none;
+    text-decoration: none; /*Remove underline*/
 
 }
 
@@ -53,4 +53,52 @@ header {
         object-position: center center;
       }
   }
+
+ footer {
+    position: absolute;
+    width: 100%;
+    height: auto; 
+    background-color: #2d6a4f;   
+  }
+
+footer li{
+  list-style: none;   /*Quitar los puntos de los items*/
+
+}
+
+.wrap-footer{
+    display: grid;
+    grid-template-columns: 30% 15% 15% 20%;
+    column-gap: 5%;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+  }
+
+#fcol2 a {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #f1ede9;
+    text-decoration: none; /*Remove underline*/
+
+}
+
+#fcol3 a {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #f1ede9;
+    text-decoration: none; /*Remove underline*/
+
+}
+
+ #fcol1 ul{
+    display: inline-flex;
+    float: right;
+  }
+
+.iconorrss{
+    width: 30%;
+    margin-left: 10px;
+    padding: 5px 5px;
+}
 
