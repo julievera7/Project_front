@@ -39,6 +39,11 @@ header {
 
 }
 
+#registro form {
+    position: absolute;
+    top: -15%; 
+}
+
 /*
 #menuprincipal {
     width: 100%;
