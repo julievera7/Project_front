@@ -24,11 +24,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Libros</a></li>
             <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Reseñas</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Regístrate</a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><i id="icononav" class="bi bi-box-arrow-in-right"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/registro.html">Regístrate</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/login.html"><i id="icononav" class="bi bi-box-arrow-in-right"></i></a></li>
           </ul>
         </div>
       </div>
@@ -71,38 +71,104 @@
     </form>
   </div>-->
 
- <div class="container text-center">
+ <div class="container text-center" id="cardbook">
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/img/libro_1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">El club de los psicópatas</h5>
+          <p class="card-text">John Katzenbach</p>
+        </div>
+      </div>  
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/img/libro_2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">El hijo olvidado</h5>
+          <p class="card-text">Mikel Santiago</p>
+        </div>
+      </div>  
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/img/libro_3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">El psicoanalista en la mira</h5>
+          <p class="card-text">John Katzenbach</p>
+        </div>
+      </div>  
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/img/libro_4.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Terapia</h5>
+          <p class="card-text">Sebastian Fitzek</p>
+        </div>
+      </div>  
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/img/libro_5.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Holly</h5>
+          <p class="card-text">Stephen King</p>
+        </div>
+      </div>  
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/img/libro_6.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Verity - La Sombra De Un Engaño</h5>
+          <p class="card-text">Colleen Hoover</p>
+        </div>
+      </div>  
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/img/libro_7.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">La lista del Juez</h5>
+          <p class="card-text">John Grisham</p>
+        </div>
+      </div>  
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/img/libro_8.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">El jurado</h5>
+          <p class="card-text">John Grisham</p>
+        </div>
+      </div>  
+    </div>
   </div>
 </div>
 
-
-
-  <footer>
-    <div class="wrap-footer">
-      <div id="fcol1">
-        <ul>
-          <li><a href=""><img class="iconorrss" src="assets/img/ig.svg" alt="Logo de instagram"></a></li>
-          <li><a href=""><img class="iconorrss" src="assets/img/fb.svg" alt="Logo de Facebook"></a></li>
-          <li><a href=""><img class="iconorrss" src="assets/img/youtube.svg" alt="Logo de Youtube"></a></li>
-        </ul>
-      </div>
-      <div id="fcol2">
-        <ul>
-          <li><a href="">Términos de Uso</a></li>
-          <li><a href="">Políticas de Privacidad</a></li>
-          <li><a href="">Políticas de Cookies</a></li>
-        </ul>
-      </div>
-      <div id="fcol3">
-        <ul>
-          <li><a href="">Patrocinadores</a></li>
-          <li><a href="">Concursos</a></li>
-        </ul>
+  <footer class="wrap-footer">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div class="col" id="fcol1">
+          <a href=""><i id="iconorrss" class="bi bi-facebook"></i></a>
+          <a href=""><i id="iconorrss" class="bi bi-instagram"></i></a>
+          <a href=""><i id="iconorrss" class="bi bi-youtube"></i></a>
+        </div>
+        <div class="col" id="fcol2">
+          <ul>
+            <li><a href="">Términos de Uso</a></li>
+            <li><a href="">Políticas de Privacidad</a></li>
+            <li><a href="">Políticas de Cookies</a></li>
+          </ul>
+        </div>
+        <div class="col" id="fcol3">
+          <ul>
+            <li><a href="">Patrocinadores</a></li>
+            <li><a href="">Concursos</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>

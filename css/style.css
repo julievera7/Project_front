@@ -1,5 +1,5 @@
 body {
-    background-color: #f1ede9;
+    background-color: #242424;
 }
 header {
     display: flex;
@@ -32,6 +32,13 @@ header {
     font-size: 1rem; 
     color: white;
 }
+
+#formulario form{
+    position: absolute;
+    top: 10%;   
+
+}
+
 /*
 #menuprincipal {
     width: 100%;
@@ -71,9 +78,13 @@ header {
         object-position: center center;
       }
   } */
+#cardbook {
+    padding: 30px 10px;
+    margin: auto;
+}
 
  footer {
-    position: absolute;
+   /* position: absolute;*/
     width: 100%;
     height: auto; 
     background-color: #2d6a4f;   
@@ -84,7 +95,7 @@ footer li{
 
 }
 
-.wrap-footer{
+/* .wrap-footer{
     display: grid;
     grid-template-columns: 30% 15% 15% 20%;
     column-gap: 5%;
@@ -92,7 +103,7 @@ footer li{
     margin: 2rem auto;
     max-width: 1200px;
   }
-
+*/
 #fcol2 a {
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 15px;
@@ -109,14 +120,15 @@ footer li{
 
 }
 
- #fcol1 ul{
-    display: inline-flex;
-    float: right;
-  }
 
-.iconorrss{
-    width: 30%;
-    margin-left: 10px;
-    padding: 5px 5px;
+
+
+footer .col {
+    padding-top: 20px;
+}
+#iconorrss{
+    font-size: 1.5rem; 
+    color: white;
+    padding: 20px 10px;    
 }
 
