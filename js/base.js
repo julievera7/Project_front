@@ -21,7 +21,10 @@ if (typeof form !== "undefined") {
  
 }
 
-const API_SERVER = 'https://openlibrary.org';
+const API_SERVER = "https://openlibrary.org/search.json?q=t;
+const headers = new Headers({
+  "User-Agent": "projectfront/1.0 (julievera7@gmail.com)"
+});
 const options = {
     method: 'GET', // Método de la petición (GET)
     headers: {
