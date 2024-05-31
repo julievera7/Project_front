@@ -21,7 +21,7 @@ if (typeof form !== "undefined") {
  
 }
 
-const API_SERVER = "https://openlibrary.org/search.json?q=t;
+const API_SERVER = "https://openlibrary.org/search.json";
 const headers = new Headers({
   "User-Agent": "projectfront/1.0 (julievera7@gmail.com)"
 });
@@ -35,7 +35,7 @@ const options = {
 
 function consultar(){
   document.getElementById(".bookmatch").innerHTML="";
-  fetch("${API_SERVER}/search.json?q="+document.getElementById("buscar").value).then(a=>a.json()).then(response =>{
+  fetch("${API_SERVER}?q="+document.getElementById("buscar").value).then(a=>a.json()).then(response =>{
     for(var i=0; i<3; i++){
       document.getElementById("bookmatch").innerHTML+="<h3>"+response.docs[i].title+"</h3>"+response.docs[i].author_name[0]+"<br><img src='https://covers.openlibrary.org/a/olid/"+response.docs[i].key[0]+"-M.jpg'><br>";
     }
