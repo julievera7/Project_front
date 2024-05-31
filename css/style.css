@@ -93,6 +93,17 @@ header {
         object-position: center center;
       }
   } */
+
+small {
+    display: none;
+}
+
+.was-validated small{
+    display: block;
+    color: red;
+
+}
+
 #cardbook {
     padding: 30px 10px;
     margin: auto;

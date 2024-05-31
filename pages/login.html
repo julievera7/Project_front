@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
+    <script defer src="../js/base.js"></script>
     
     <title>Reseña de libros</title>
 </head>
@@ -37,14 +37,16 @@
 
   <div class="container-fluid" id="formulario">
     <img src="../assets/img/portada3.png"  alt="...">
-      <form class="p-3 mb-3 bg-light text-dark border rounded" id="validatelogin" novalidate> 
+      <form class="p-3 mb-3 bg-light text-dark border rounded" id="formmain" novalidate> 
         <div class="mb-3 row" id=¨form¨>
-            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+            <small>* Campo obligatorio</small>
         </div>
         <div class="mb-3 row" id=¨form¨">
             <label for="exampleInputPassword1" class="form-label">Contraseña</label>
             <input type="password" class="form-control" id="exampleInputPassword1" required>
+            <small>* Campo obligatorio</small>
         </div>
         <div class="mb-3 row" id=¨form¨"><a href="registro.html">Regístrate</a></div>
         <div class="mb-3 row" id=¨form¨"><a href="registro.html">¿Olvidó su contraseña?</a></div>
@@ -77,6 +79,7 @@
       </div>
     </div>
   </footer>
+    
 </body>
 
 </html>
