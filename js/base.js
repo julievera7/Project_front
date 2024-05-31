@@ -17,72 +17,14 @@ const isValidEmail = email => {
 }
 
 
-var requests, OpenLibrary;
-(function () {
-  'use strict';
-
-  requests = {
-    get: function(url, callback){
-      $.get(url, function(results){       
-      }).done(function(data){
-        if (callback) {callback(data);}
-      });
-    },
-    post: function(url, callback){
-      $.post(url, function(results){       
-      }).done(function(data){
-        if (callback) {callback(data);}
-      });
-    },    
-
-    put: function(url, callback){
-      $.put(url, function(results){       
-      }).done(function(data){
-        if (callback) {callback(data);}
-      });
-    }, 
-  };
-  OpenLibrary = {
-    search: function(query, callback) {
-      var url = "https://openlibrary.org/search/inside.json?q="+query 
-      requests.get(url,function(response) {callback(response.hits.hits)});
-    },
-  };
-
-  var debounce = function (fun, threshold, execAsap) {
-    var timeout;
-    return function debounce () {
-      var obj = this, args = arguments;
-      function delayed () {
-        if (!execAsap)
-          fun.apply(obj, args);
-        timeout = null;
-      };
-      if (timeout) {
-        clearTimeout(timeout);
-      } 
-      else if (execAsap) {
-        fun.apply(obj, args);
-      }
-      timeout = setTimeout (delayed, threshold || 100);
-    };
-  };
-  $(document).keyup('#booksearch', debounce(function(event) {
-    $('.bookmatch').empty();
-    $('.bookmatch').addClass('loader');
-      }, 100, false));
-      
-      $(document).keyup('#booksearch', debounce(function(event) {
-    OpenLibrary.search($('#booksearch input').val(), function(results) {
-        var match = results[0];
-        $('.bookmatch').removeClass('loader');
-        $('.bookmatch').append(
-      '<a href="https://openlibrary.org' + match.edition.key + '">' +
-          '<img src="' + match.edition.cover_url + '">' +
-      '</a>'
-        );
-    });
-      }, 1000, false));
-}());
-
-
+function consultar(){
+  document.getElementById('bookmatch').innerHTML="";
+  fetch("http://openlibrary.org/search.json?q="+document.getElementById("booksearch").value)
+  .then(a=>a.json())
+  .then(response =>{
+    for(var i=0; i<3; i++){
+      document.getElementById("bookmatch").innerHTML+="<h3>"+response.docs[i].title+"</h3>"
+      +response.docs[i].author_name[0]+"<br><img src='http://covers.openlibrary.org/b/isbn/'response.docs[i].isbn[0]+-M.jpg><br>";
+    }
+  })
+};
