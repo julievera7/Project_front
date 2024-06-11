@@ -59,17 +59,18 @@
       <span class="visually-hidden">Next</span>
     </button>
     <form class="d-flex" role="search" id="book">
-      <input class="form-control me-2" type="search" placeholder="Escribe el título del libro" aria-label="Buscar" name="booksearch" id="buscar">
-      <button class="btn btn-dark" type="submit" onclick="consultar()">Buscar</button>
+      <input class="form-control me-2" id="booksearch" type="search" placeholder="Escribe el título del libro" aria-label="Buscar">
+      <button class="btn btn-dark" type="submit" onclick="getbooks()" >Buscar</button>
       <button class="btn btn-info" type="reset" onclick="reiniciar()">Limpiar</button>
     </form>
   </div>
-
-<div class="container text-center bookmatch" id="bookmatch">
+<div class="container text-center bookmatch">
   <br>
   <h3>Resultado de la búsqueda con la API Open Library aquí:</h3>
 </div>
-
+<div id="books">
+    
+</div>
  <div class="container text-center" id="cardbook">
   <br>
   <h3>Los más consultados:</h3>
