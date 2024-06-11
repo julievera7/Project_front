@@ -38,7 +38,7 @@ function getbooks(){
   fetch("http://openlibrary.org/search.json?q="+document.getElementById("booksearch").value)
   .then(a=>a.json())
   .then(Response=>{
-      for(var i=0; i<1; i++) {
+      for(var i=0; i<3; i++) {
           document.getElementById("books").innerHTML+="<h2>"+Response.docs[i].title+"</h2>"+Response.docs[i].author_name[0]+"<br><img src='http://covers.openlibrary.org/b/isbn/"+Response.docs[i].isbn[0]+"-M.jpg'><br>";
 
       }

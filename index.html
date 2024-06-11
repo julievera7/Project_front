@@ -33,9 +33,9 @@
             <li class="nav-item"><a class="nav-link" href="pages/registro.html">Regístrate</a></li>
             <li class="nav-item"><a class="nav-link" href="pages/login.html"><i id="icononav" class="bi bi-box-arrow-in-right"></i></a></li>
             <li class="nav-item"><a class="nav-link" href="pages/registro.html">   </a></li>
-            <input id="booksearch" placeholder="Título del libro">
+            <input id="booksearch" placeholder=" Título del libro">
             <button class="btn btn-dark" onclick="getbooks()">Buscar</button>
-       
+      
           </ul>
         </div>
       </div>
@@ -65,12 +65,13 @@
  
 
   </div>
-<div class="container text-center bookmatch">
+<div class="container text-center bookmatch" id="cardbook">
   <br>
   <h3>Resultado de la búsqueda con la API Open Library aquí:</h3>
+  <div id="books">
+  </div>
 </div>
-<div id="books">
-</div>
+
  <div class="container text-center" id="cardbook">
   <br>
   <h3>Los más consultados:</h3>
