@@ -38,13 +38,24 @@ function getbooks(){
   fetch("http://openlibrary.org/search.json?q="+document.getElementById("booksearch").value)
   .then(a=>a.json())
   .then(Response=>{
-      for(var i=0; i<3; i++) {
-          document.getElementById("books").innerHTML+="<img class='card' sizes='width: 5%' src='http://covers.openlibrary.org/b/isbn/"+Response.docs[i].isbn[0]+"-M.jpg'>"+Response.docs[i].title;
+      for(var i=0; i<6; i++) {
+          document.getElementById("books").innerHTML+="<div class='col'>"+"<div class='card'>"+"<img class='card-img-top' src='http://covers.openlibrary.org/b/isbn/"+Response.docs[i].isbn[0]+"-M.jpg'>"+"<div class='card-body'>"+"<h5 class='card-title'>"+Response.docs[i].title+"</h5>"+"<p class='card-text'>"+Response.docs[i].author_name[0]+"</p>"+"</div>"+"</div>"+"</div>";
 
       }
   });
 }
 
+      
+        
+        
+         
+          
+       
+       
+/*
+for(var i=0; i<3; i++) {
+          document.getElementById("books").innerHTML+="<img class='card' sizes='width: 5%' src='http://covers.openlibrary.org/b/isbn/"+Response.docs[i].isbn[0]+"-M.jpg'>"+Response.docs[i].title;
+          */
 function reiniciar(){
   fetch("https://julievera7.github.io/Project_front/index.html")
 }
