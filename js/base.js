@@ -43,3 +43,4 @@ addRegistro.addEventListener("submit", (e)=> {
     return false
   }
 })
+

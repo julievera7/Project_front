@@ -147,6 +147,10 @@ form .button input{
 }
 
   
+form #bottonenviar {
+  padding: 5px;
+  margin: 10px;
+}
 
 .was-validated small{
   display: block;
@@ -159,6 +163,7 @@ form .button input{
 .form-group input:valid{
   border-color: green;
 }
+
 
 footer {
    width: 100%;
